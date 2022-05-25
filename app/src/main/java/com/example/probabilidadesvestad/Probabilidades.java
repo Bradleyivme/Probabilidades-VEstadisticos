@@ -36,89 +36,199 @@ public class Probabilidades extends AppCompatActivity {
         if(!rdOpc1.isChecked() && !rdOpc2.isChecked() && !rdOpc3.isChecked()){
 
             Toast.makeText(this, "Elija una opción", Toast.LENGTH_SHORT).show();
-
-
         }
 
         else if(Npregunta == 1){
 
 
-            //Se verifica la respuesta, si es correcta se agregan 2 puntos a la nota
             if(rdOpc2.isChecked()){
-                nota = nota + 2;
+                nota = nota + 1;
+                Toast.makeText(this,  R.string.correct, Toast.LENGTH_SHORT).show();
+            }else{
+                Toast.makeText(this, R.string.incorrect, Toast.LENGTH_SHORT).show();
             }
-            //Se le suma 1 al contador de la pregunta
+
             Npregunta = Npregunta + 1;
-            //Se setean los textos para la siguiente pregunta
-            txtNpregunta.setText("Pregunta 2");
-            txtPregunta.setText("Se lanzan al aire tres monedas iguales. Calcula la probabilidad de que salgan dos caras y una cruz");
-            rdOpc1.setText("3/8");
-            rdOpc2.setText("2/4");
-            rdOpc3.setText("3/5");
+
+            txtNpregunta.setText("2 de 10");
+            txtPregunta.setText(R.string.Pregunta2);
+            rdOpc1.setText(R.string.R21);
+            rdOpc2.setText(R.string.R22);
+            rdOpc3.setText(R.string.R23);
             //Se limpian los Radio buttons para la siguiente pregunta
             rdOpc1.setChecked(false);
             rdOpc2.setChecked(false);
             rdOpc3.setChecked(false);
         }else if(Npregunta == 2) {
-            //Se verifica la respuesta, si es correcta se agregan 2 puntos a la nota
+            //Se verifica la respuesta, si es correcta se agregan 1 puntos a la nota
             if (rdOpc1.isChecked()) {
-                nota = nota + 2;
+                nota = nota + 1;
+                Toast.makeText(this,  R.string.correct, Toast.LENGTH_SHORT).show();
+            }else{
+                Toast.makeText(this, R.string.incorrect, Toast.LENGTH_SHORT).show();
             }
             //Se le suma 1 al contador de la pregunta
             Npregunta = Npregunta + 1;
             //Se setean los textos para la siguiente pregunta
-            txtNpregunta.setText("Pregunta 3");
-            txtPregunta.setText("De los 39 alumnos de una clase, 16 escogieron francés y 27 inglés. " +
-                    "Nueve alumnos eligieron ambos, y el resto no escogió ninguno de ellos. " +
-                    "Si se elige al azar un alumno de dicha clase, ¿Cuál es la probabilidad de que elija ambos idiomas?.");
-            rdOpc1.setText("4/39");
-            rdOpc2.setText("35/39");
-            rdOpc3.setText("9/39");
+            txtNpregunta.setText("3 de 10");
+            txtPregunta.setText(R.string.Pregunta3);
+            rdOpc1.setText(R.string.R31);
+            rdOpc2.setText(R.string.R32);
+            rdOpc3.setText(R.string.R33);
             //Se limpian los Radio buttons para la siguiente pregunta
             rdOpc1.setChecked(false);
             rdOpc2.setChecked(false);
             rdOpc3.setChecked(false);
         }else if(Npregunta == 3) {
-            //Se verifica la respuesta, si es correcta se agregan 2 puntos a la nota
+
             if (rdOpc3.isChecked()) {
-                nota = nota + 2;
+                nota = nota + 1;
+                Toast.makeText(this,  R.string.correct, Toast.LENGTH_SHORT).show();
+            }else{
+                Toast.makeText(this, R.string.incorrect, Toast.LENGTH_SHORT).show();
             }
-            //Se le suma 1 al contador de la pregunta
+
             Npregunta = Npregunta + 1;
             //Se setean los textos para la siguiente pregunta
-            txtNpregunta.setText("Pregunta 4");
-            txtPregunta.setText("Esta es la pregunta 4, su respuesta correcta es la opcion 1");
-            rdOpc1.setText("Opcion 1 p4");
-            rdOpc2.setText("Opcion 2 p4");
-            rdOpc3.setText("Opcion 3 p4");
+            txtNpregunta.setText("4 de 10");
+            txtPregunta.setText(R.string.Pregunta4);
+            rdOpc1.setText(R.string.R41);
+            rdOpc2.setText(R.string.R42);
+            rdOpc3.setText(R.string.R43);
             //Se limpian los Radio buttons para la siguiente pregunta
             rdOpc1.setChecked(false);
             rdOpc2.setChecked(false);
             rdOpc3.setChecked(false);
         }else if(Npregunta == 4) {
-            //Se verifica la respuesta, si es correcta se agregan 2 puntos a la nota
+
             if (rdOpc1.isChecked()) {
-                nota = nota + 2;
+                nota = nota + 1;
+                Toast.makeText(this,  R.string.correct, Toast.LENGTH_SHORT).show();
+            }else{
+                Toast.makeText(this, R.string.incorrect, Toast.LENGTH_SHORT).show();
             }
-            //Se le suma 1 al contador de la pregunta
+
             Npregunta = Npregunta + 1;
-            //Se setean los textos para la siguiente pregunta
-            txtNpregunta.setText("Pregunta 5");
-            txtPregunta.setText("Esta es la pregunta 5, su respuesta correcta es la opcion 2");
-            rdOpc1.setText("Opcion 1 p5");
-            rdOpc2.setText("Opcion 2 p5");
-            rdOpc3.setText("Opcion 3 p5");
+
+            txtNpregunta.setText("5 de 10");
+            txtPregunta.setText(R.string.Pregunta5);
+            rdOpc1.setText(R.string.R51);
+            rdOpc2.setText(R.string.R52);
+            rdOpc3.setText(R.string.R53);
             //Se limpian los Radio buttons para la siguiente pregunta
             rdOpc1.setChecked(false);
             rdOpc2.setChecked(false);
             rdOpc3.setChecked(false);
         }else if(Npregunta == 5) {
             //Se verifica la respuesta, si es correcta se agregan 2 puntos a la nota
+            if (rdOpc1.isChecked()) {
+                nota = nota + 1;
+                Toast.makeText(this,  R.string.correct, Toast.LENGTH_SHORT).show();
+            }else{
+                Toast.makeText(this, R.string.incorrect, Toast.LENGTH_SHORT).show();
+            }
+            //Se le suma 1 al contador de la pregunta
+            Npregunta = Npregunta + 1;
+            //Se setean los textos para la siguiente pregunta
+            txtNpregunta.setText("6 de 10");
+            txtPregunta.setText(R.string.Pregunta6);
+            rdOpc1.setText(R.string.R61);
+            rdOpc2.setText(R.string.R62);
+            rdOpc3.setText(R.string.R63);
+            //Se limpian los Radio buttons para la siguiente pregunta
+            rdOpc1.setChecked(false);
+            rdOpc2.setChecked(false);
+            rdOpc3.setChecked(false);
+        }else if(Npregunta == 6) {
+            //Se verifica la respuesta, si es correcta se agregan 2 puntos a la nota
+            if (rdOpc3.isChecked()) {
+                nota = nota + 1;
+                Toast.makeText(this,  R.string.correct, Toast.LENGTH_SHORT).show();
+            }else{
+                Toast.makeText(this, R.string.incorrect, Toast.LENGTH_SHORT).show();
+            }
+            //Se le suma 1 al contador de la pregunta
+            Npregunta = Npregunta + 1;
+            //Se setean los textos para la siguiente pregunta
+            txtNpregunta.setText("7 de 10");
+            txtPregunta.setText(R.string.Pregunta7);
+            rdOpc1.setText(R.string.R71);
+            rdOpc2.setText(R.string.R72);
+            rdOpc3.setText(R.string.R73);
+            //Se limpian los Radio buttons para la siguiente pregunta
+            rdOpc1.setChecked(false);
+            rdOpc2.setChecked(false);
+            rdOpc3.setChecked(false);
+        } else if(Npregunta == 7) {
+            //Se verifica la respuesta, si es correcta se agregan 2 puntos a la nota
             if (rdOpc2.isChecked()) {
-                nota = nota + 2;
+                nota = nota + 1;
+                Toast.makeText(this,  R.string.correct, Toast.LENGTH_SHORT).show();
+            }else{
+                Toast.makeText(this, R.string.incorrect, Toast.LENGTH_SHORT).show();
+            }
+            //Se le suma 1 al contador de la pregunta
+            Npregunta = Npregunta + 1;
+            //Se setean los textos para la siguiente pregunta
+            txtNpregunta.setText("8 de 10");
+            txtPregunta.setText(R.string.Pregunta8);
+            rdOpc1.setText(R.string.R81);
+            rdOpc2.setText(R.string.R82);
+            rdOpc3.setText(R.string.R83);
+            //Se limpian los Radio buttons para la siguiente pregunta
+            rdOpc1.setChecked(false);
+            rdOpc2.setChecked(false);
+            rdOpc3.setChecked(false);
+        }else if(Npregunta == 8) {
+            //Se verifica la respuesta, si es correcta se agregan 2 puntos a la nota
+            if (rdOpc1.isChecked()) {
+                nota = nota + 1;
+                Toast.makeText(this,  R.string.correct, Toast.LENGTH_SHORT).show();
+            }else{
+                Toast.makeText(this, R.string.incorrect, Toast.LENGTH_SHORT).show();
+            }
+            //Se le suma 1 al contador de la pregunta
+            Npregunta = Npregunta + 1;
+            //Se setean los textos para la siguiente pregunta
+            txtNpregunta.setText("9 de 10");
+            txtPregunta.setText(R.string.Pregunta9);
+            rdOpc1.setText(R.string.R91);
+            rdOpc2.setText(R.string.R92);
+            rdOpc3.setText(R.string.R93);
+            //Se limpian los Radio buttons para la siguiente pregunta
+            rdOpc1.setChecked(false);
+            rdOpc2.setChecked(false);
+            rdOpc3.setChecked(false);
+        }else if(Npregunta == 9) {
+            //Se verifica la respuesta, si es correcta se agregan 2 puntos a la nota
+            if (rdOpc3.isChecked()) {
+                nota = nota + 1;
+                Toast.makeText(this,  R.string.correct, Toast.LENGTH_SHORT).show();
+            }else{
+                Toast.makeText(this, R.string.incorrect, Toast.LENGTH_SHORT).show();
+            }
+            //Se le suma 1 al contador de la pregunta
+            Npregunta = Npregunta + 1;
+            //Se setean los textos para la siguiente pregunta
+            txtNpregunta.setText("10 de 10");
+            txtPregunta.setText(R.string.Pregunta10);
+            rdOpc1.setText(R.string.R101);
+            rdOpc2.setText(R.string.R102);
+            rdOpc3.setText(R.string.R103);
+            //Se limpian los Radio buttons para la siguiente pregunta
+            rdOpc1.setChecked(false);
+            rdOpc2.setChecked(false);
+            rdOpc3.setChecked(false);
+        } else if(Npregunta == 10) {
+            //Se verifica la respuesta, si es correcta se agregan 2 puntos a la nota
+            if (rdOpc2.isChecked()) {
+                nota = nota + 1;
+                Toast.makeText(this,  R.string.correct, Toast.LENGTH_SHORT).show();
+            }else{
+                Toast.makeText(this, R.string.incorrect, Toast.LENGTH_SHORT).show();
             }
             //Se setean los textos para el resultado de la nota
-            txtNpregunta.setText("RESPUESTAS CORRECTAS: "+nota);
+            txtNpregunta.setText("RESPUESTAS CORRECTAS: " +nota);
             //IF para verificar si se ha aprobado o reprobado
             if(nota >= 6){
                 txtPregunta.setText("EXCELENTE");
