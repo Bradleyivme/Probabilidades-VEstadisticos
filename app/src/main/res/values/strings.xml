@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">ProbabilidadesVEstad</string>
+    <string name="answer">Si una bolsa contiene 2 bolas negras, 3 bolas blancas, 4 rojas y 5 bolas verdes. Se extrae una bola de la bolsa ¿Cuál es la probabilidad de que la bola sea de color rojo? </string>
+    <string name="p1">6/7</string>
+    <string name="p2">2/7</string>
+    <string name="p3">8/7</string>
+    <string name="regresar">REGRESAR</string>
+    <string name="sig">SIGUIETE</string>
+    <string name="LABEL">ESTAMOS EN PROBABILIDADES</string>
+
 </resources>
