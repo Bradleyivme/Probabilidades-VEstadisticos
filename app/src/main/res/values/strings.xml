@@ -1,11 +1,20 @@
 <resources>
     <string name="app_name">ProbabilidadesVEstad</string>
-    <string name="answer">Si una bolsa contiene 2 bolas negras, 3 bolas blancas, 4 rojas y 5 bolas verdes. Se extrae una bola de la bolsa ¿Cuál es la probabilidad de que la bola sea de color rojo? </string>
-    <string name="p1">6/7</string>
-    <string name="p2">2/7</string>
-    <string name="p3">8/7</string>
     <string name="regresar">REGRESAR</string>
     <string name="sig">SIGUIETE</string>
+
     <string name="LABEL">ESTAMOS EN PROBABILIDADES</string>
+    <string name="pregunta1">Si una bolsa contiene 2 bolas negras, 3 bolas blancas, 4 rojas y 5 bolas verdes. Se extrae una bola de la bolsa ¿Cuál es la probabilidad de que la bola sea de color rojo? </string>
+    <string name="R11">6/7</string>
+    <string name="R12">2/7</string>
+    <string name="R13">8/7</string>
+
+    <string name="correct">CORRECTO :)</string>
+    <string name="incorrect">INCORRECTO :(</string>
+    <string name="Pregunta2">Se lanzan al aire tres monedas iguales. Calcula la probabilidad de que salgan dos caras y una cruz</string>
+    <string name="R21">3/8</string>
+    <string name="R22">2/4</string>
+    <string name="R23">5/8</string>
+
 
 </resources>
