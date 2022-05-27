@@ -3,9 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Andorid/ProbabilidadesVEstad/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Andorid/ProbabilidadesVEstad/app/src/main/res/layout/activity_probabilidades.xml" value="0.19972826086956522" />
-        <entry key="..\:/Andorid/ProbabilidadesVEstad/app/src/main/res/layout/activity_probabilidades2.xml" value="0.19972826086956522" />
+        <entry key="..\:/Tareas Quinto Semestre/Programacion III/Parciales/notacion-posfija-P3P1-main/Probabilidades-VEstadisticos/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Tareas Quinto Semestre/Programacion III/Parciales/notacion-posfija-P3P1-main/Probabilidades-VEstadisticos/app/src/main/res/layout/activity_probabilidades.xml" value="0.17916666666666667" />
+        <entry key="..\:/Tareas Quinto Semestre/Programacion III/Parciales/notacion-posfija-P3P1-main/Probabilidades-VEstadisticos/app/src/main/res/layout/activity_valores_estadisticos.xml" value="0.18" />
+        <entry key="..\:/Tareas Quinto Semestre/Programacion III/Parciales/notacion-posfija-P3P1-main/Probabilidades-VEstadisticos/app/src/main/res/layout/fragment_defaultx.xml" value="0.22" />
+        <entry key="..\:/Tareas Quinto Semestre/Programacion III/Parciales/notacion-posfija-P3P1-main/Probabilidades-VEstadisticos/app/src/main/res/layout/fragment_dist_normal.xml" value="0.25" />
+        <entry key="..\:/Tareas Quinto Semestre/Programacion III/Parciales/notacion-posfija-P3P1-main/Probabilidades-VEstadisticos/app/src/main/res/layout/fragment_med_var.xml" value="0.22" />
       </map>
     </option>
   </component>
