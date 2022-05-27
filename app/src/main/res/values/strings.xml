@@ -56,7 +56,33 @@
     <string name="R101">"1/27"</string>
     <string name="R102">"19/27"</string>
     <string name="R103">"2/3"</string>
-
+    <string name="tituloValoresEst">Valores Estadisticos</string>
+    <string name="btnMedDesv">"Media y Varianza "</string>
+    <string name="btnDisNor">Distribucion Normal</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tituloDistNormal">Distribucion Normal</string>
+    <string name="btnRegresar">Regresar</string>
+    <string name="hintMedia">Media</string>
+    <string name="btnCalcular">Calcular</string>
+    <string name="hintDesvEst">Desviacion Estandar</string>
+    <string name="rBtnSing">Una sola variable</string>
+    <string name="rBtnEnt">Entre dos variables</string>
+    <string name="hintXUno">X1</string>
+    <string name="hintXDos">X2</string>
+    <string name="resultado">Resultado</string>
+    <string name="nop">Calculadora de Media y Varianza</string>
+    <string name="tituloMedVar">Media y Varianza</string>
+    <string name="infoValorX">Ingrese valor de X</string>
+    <string name="infoValorFx">Ingrese valor de f(x)</string>
+    <string name="valorX">Valor X</string>
+    <string name="valorFx">Valor f(x)</string>
+    <string name="btnGuardar">Guardar</string>
+    <string name="cantDatos">Tamaño de las tablas</string>
+    <string name="resulMedia">Resultado de Media</string>
+    <string name="resultVar">Resultado Varianza</string>
+    <string name="fragMenuVe">Menu Valores Estadisticos</string>
+    <string name="mediaVarianza">Media y Varianza</string>
 
 
 </resources>
