@@ -1,8 +1,10 @@
 package com.example.probabilidadesvestad;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.annotation.SuppressLint;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -27,6 +29,15 @@ public class Probabilidades extends AppCompatActivity {
         txtPregunta = (TextView)findViewById(R.id.pregunta);
         next = (Button)findViewById(R.id.SIG);
         salir = (Button)findViewById(R.id.terminar);
+
+        setContentView(R.layout.activity_probabilidades);
+
+        ConstraintLayout constraintLayout = findViewById(R.id.mainLayout);
+
+        AnimationDrawable animationDrawable = (AnimationDrawable) constraintLayout.getBackground();
+        animationDrawable.setEnterFadeDuration(2500);
+        animationDrawable.setEnterFadeDuration(5000);
+        animationDrawable.start();
 
     }
     @SuppressLint("SetTextI18n")
