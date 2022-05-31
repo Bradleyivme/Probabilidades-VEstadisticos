@@ -32,5 +32,15 @@ public class MainActivity extends AppCompatActivity {
         Intent x = new Intent(this,ValoresEstadisticos.class);
         startActivity(x);
     }
+    public void cuestioanariovalestadisticos(View view){
+        Intent x = new Intent(this,cuestionariovalestadisticos.class);
+        startActivity(x);
+    }
+    public void contenidos(View view){
+        Intent x = new Intent(this,Aprendizaje.class);
+        startActivity(x);
+    }
+
+
 
 }

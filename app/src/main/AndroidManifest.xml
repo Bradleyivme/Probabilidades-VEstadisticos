@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProbabilidadesVEstad">
         <activity
+            android:name=".Aprendizaje"
+            android:exported="false" />
+        <activity
+            android:name=".cuestionariovalestadisticos"
+            android:exported="true" />
+        <activity
             android:name=".ValoresEstadisticos"
             android:exported="true" />
         <activity
