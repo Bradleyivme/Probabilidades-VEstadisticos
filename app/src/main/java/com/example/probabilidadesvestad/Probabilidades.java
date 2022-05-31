@@ -15,22 +15,24 @@ import android.widget.Toast;
 public class Probabilidades extends AppCompatActivity {
     Button salir, next;
     RadioButton rdOpc1, rdOpc2, rdOpc3;
-    TextView txtNpregunta, txtPregunta;
+    TextView txtNpregunta, txtPregunta, resp;
     int nota = 0; int Npregunta = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_probabilidades);
         rdOpc1 = (RadioButton)findViewById(R.id.rbtn1);
         rdOpc2 = (RadioButton)findViewById(R.id.rbtn2);
         rdOpc3 = (RadioButton)findViewById(R.id.rbtn3);
         txtNpregunta = (TextView)findViewById(R.id.Indicep);
         txtPregunta = (TextView)findViewById(R.id.pregunta);
+        resp = (TextView)findViewById(R.id.F);
         next = (Button)findViewById(R.id.SIG);
         salir = (Button)findViewById(R.id.terminar);
 
-        setContentView(R.layout.activity_probabilidades);
+
 
         ConstraintLayout constraintLayout = findViewById(R.id.mainLayout);
 
@@ -242,14 +244,15 @@ public class Probabilidades extends AppCompatActivity {
             txtNpregunta.setText("RESPUESTAS CORRECTAS: " +nota);
             //IF para verificar si se ha aprobado o reprobado
             if(nota >= 6){
-                txtPregunta.setText("EXCELENTE");
+                resp.setText("EXCELENTE");
             }else{
-                txtPregunta.setText("HAY QUE REPASAR");
+                resp.setText("HAY QUE REPASAR");
             }
             //Se ocultan las opciones que no se van a usar para ver la nota y resultado
             rdOpc1.setVisibility(View.GONE);
             rdOpc2.setVisibility(View.GONE);
             rdOpc3.setVisibility(View.GONE);
+            txtPregunta.setVisibility(View.GONE);
             next.setVisibility(View.GONE);
         }
 
