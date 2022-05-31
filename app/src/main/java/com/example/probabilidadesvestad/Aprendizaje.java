@@ -10,9 +10,6 @@ public class Aprendizaje extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_aprendizaje);
-<<<<<<< HEAD
-        //jfafihsgf
-=======
->>>>>>> 41e336b (nueva activity)
+
     }
 }
