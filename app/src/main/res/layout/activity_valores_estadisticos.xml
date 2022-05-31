@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ValoresEstadisticos">
+    tools:context=".ValoresEstadisticos"
+    android:background="@drawable/animation"
+    android:id="@+id/mainLayout">
 
     <TextView
         android:id="@+id/textView5"
@@ -34,13 +36,17 @@
             android:layout_width="wrap_content"
             android:layout_height="55dp"
             android:layout_weight="1"
-            android:text="@string/btnMedDesv" />
+            android:text="@string/btnMedDesv"
+            android:background="@drawable/button"
+            android:fontFamily="sans-serif-smallcaps"/>
 
         <Button
             android:id="@+id/btnDistNor"
             android:layout_width="wrap_content"
             android:layout_height="55dp"
             android:layout_weight="1"
+            android:background="@drawable/button"
+            android:fontFamily="sans-serif-smallcaps"
             android:text="@string/btnDisNor" />
     </LinearLayout>
 
