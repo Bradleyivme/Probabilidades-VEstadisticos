@@ -94,14 +94,14 @@ public class CUESTIONARIOVALESTA extends AppCompatActivity {
             txtPregunta.setText(R.string.PV4);
             rdOpc1.setText(R.string.V41);
             rdOpc2.setText(R.string.V42);
-            rdOpc3.setText(R.string.R43);
+            rdOpc3.setText(R.string.V43);
             //Se limpian los Radio buttons para la siguiente pregunta
             rdOpc1.setChecked(false);
             rdOpc2.setChecked(false);
             rdOpc3.setChecked(false);
         }else if(Npregunta == 4) {
 
-            if (rdOpc1.isChecked()) {
+            if (rdOpc3.isChecked()) {
                 nota = nota + 1;
                 Toast.makeText(this,  R.string.correct, Toast.LENGTH_SHORT).show();
             }else{
@@ -111,17 +111,17 @@ public class CUESTIONARIOVALESTA extends AppCompatActivity {
             Npregunta = Npregunta + 1;
 
             txtNpregunta.setText("5 de 10");
-            txtPregunta.setText(R.string.Pregunta5);
-            rdOpc1.setText(R.string.R51);
-            rdOpc2.setText(R.string.R52);
-            rdOpc3.setText(R.string.R53);
+            txtPregunta.setText(R.string.PV5);
+            rdOpc1.setText(R.string.V51);
+            rdOpc2.setText(R.string.V52);
+            rdOpc3.setText(R.string.V53);
             //Se limpian los Radio buttons para la siguiente pregunta
             rdOpc1.setChecked(false);
             rdOpc2.setChecked(false);
             rdOpc3.setChecked(false);
         }else if(Npregunta == 5) {
             //Se verifica la respuesta, si es correcta se agregan 2 puntos a la nota
-            if (rdOpc1.isChecked()) {
+            if (rdOpc2.isChecked()) {
                 nota = nota + 1;
                 Toast.makeText(this,  R.string.correct, Toast.LENGTH_SHORT).show();
             }else{
@@ -131,10 +131,10 @@ public class CUESTIONARIOVALESTA extends AppCompatActivity {
             Npregunta = Npregunta + 1;
             //Se setean los textos para la siguiente pregunta
             txtNpregunta.setText("6 de 10");
-            txtPregunta.setText(R.string.Pregunta6);
-            rdOpc1.setText(R.string.R61);
-            rdOpc2.setText(R.string.R62);
-            rdOpc3.setText(R.string.R63);
+            txtPregunta.setText(R.string.PV6);
+            rdOpc1.setText(R.string.V61);
+            rdOpc2.setText(R.string.V62);
+            rdOpc3.setText(R.string.V63);
             //Se limpian los Radio buttons para la siguiente pregunta
             rdOpc1.setChecked(false);
             rdOpc2.setChecked(false);
@@ -151,35 +151,15 @@ public class CUESTIONARIOVALESTA extends AppCompatActivity {
             Npregunta = Npregunta + 1;
             //Se setean los textos para la siguiente pregunta
             txtNpregunta.setText("7 de 10");
-            txtPregunta.setText(R.string.Pregunta7);
-            rdOpc1.setText(R.string.R71);
-            rdOpc2.setText(R.string.R72);
-            rdOpc3.setText(R.string.R73);
+            txtPregunta.setText(R.string.PV7);
+            rdOpc1.setText(R.string.V71);
+            rdOpc2.setText(R.string.V72);
+            rdOpc3.setText(R.string.V73);
             //Se limpian los Radio buttons para la siguiente pregunta
             rdOpc1.setChecked(false);
             rdOpc2.setChecked(false);
             rdOpc3.setChecked(false);
         } else if(Npregunta == 7) {
-            //Se verifica la respuesta, si es correcta se agregan 2 puntos a la nota
-            if (rdOpc2.isChecked()) {
-                nota = nota + 1;
-                Toast.makeText(this,  R.string.correct, Toast.LENGTH_SHORT).show();
-            }else{
-                Toast.makeText(this, R.string.incorrect, Toast.LENGTH_SHORT).show();
-            }
-            //Se le suma 1 al contador de la pregunta
-            Npregunta = Npregunta + 1;
-            //Se setean los textos para la siguiente pregunta
-            txtNpregunta.setText("8 de 10");
-            txtPregunta.setText(R.string.Pregunta8);
-            rdOpc1.setText(R.string.R81);
-            rdOpc2.setText(R.string.R82);
-            rdOpc3.setText(R.string.R83);
-            //Se limpian los Radio buttons para la siguiente pregunta
-            rdOpc1.setChecked(false);
-            rdOpc2.setChecked(false);
-            rdOpc3.setChecked(false);
-        }else if(Npregunta == 8) {
             //Se verifica la respuesta, si es correcta se agregan 2 puntos a la nota
             if (rdOpc1.isChecked()) {
                 nota = nota + 1;
@@ -190,11 +170,31 @@ public class CUESTIONARIOVALESTA extends AppCompatActivity {
             //Se le suma 1 al contador de la pregunta
             Npregunta = Npregunta + 1;
             //Se setean los textos para la siguiente pregunta
+            txtNpregunta.setText("8 de 10");
+            txtPregunta.setText(R.string.PV8);
+            rdOpc1.setText(R.string.V81);
+            rdOpc2.setText(R.string.V82);
+            rdOpc3.setText(R.string.V83);
+            //Se limpian los Radio buttons para la siguiente pregunta
+            rdOpc1.setChecked(false);
+            rdOpc2.setChecked(false);
+            rdOpc3.setChecked(false);
+        }else if(Npregunta == 8) {
+            //Se verifica la respuesta, si es correcta se agregan 2 puntos a la nota
+            if (rdOpc2.isChecked()) {
+                nota = nota + 1;
+                Toast.makeText(this,  R.string.correct, Toast.LENGTH_SHORT).show();
+            }else{
+                Toast.makeText(this, R.string.incorrect, Toast.LENGTH_SHORT).show();
+            }
+            //Se le suma 1 al contador de la pregunta
+            Npregunta = Npregunta + 1;
+            //Se setean los textos para la siguiente pregunta
             txtNpregunta.setText("9 de 10");
-            txtPregunta.setText(R.string.Pregunta9);
-            rdOpc1.setText(R.string.R91);
-            rdOpc2.setText(R.string.R92);
-            rdOpc3.setText(R.string.R93);
+            txtPregunta.setText(R.string.PV9);
+            rdOpc1.setText(R.string.V91);
+            rdOpc2.setText(R.string.V92);
+            rdOpc3.setText(R.string.V93);
             //Se limpian los Radio buttons para la siguiente pregunta
             rdOpc1.setChecked(false);
             rdOpc2.setChecked(false);
@@ -211,10 +211,10 @@ public class CUESTIONARIOVALESTA extends AppCompatActivity {
             Npregunta = Npregunta + 1;
             //Se setean los textos para la siguiente pregunta
             txtNpregunta.setText("10 de 10");
-            txtPregunta.setText(R.string.Pregunta10);
-            rdOpc1.setText(R.string.R101);
-            rdOpc2.setText(R.string.R102);
-            rdOpc3.setText(R.string.R103);
+            txtPregunta.setText(R.string.PV10);
+            rdOpc1.setText(R.string.V101);
+            rdOpc2.setText(R.string.V102);
+            rdOpc3.setText(R.string.V103);
             //Se limpian los Radio buttons para la siguiente pregunta
             rdOpc1.setChecked(false);
             rdOpc2.setChecked(false);

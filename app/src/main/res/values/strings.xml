@@ -79,35 +79,37 @@
     <string name="V42">6</string>
     <string name="V43">5</string>
 
-    <string name="PV5">Se tienen cinco pares de guantes de distinto color. Entremezclamos bien los dos guantes. Extraemos dos de ellos al azar. ¿Cuál es la probabilidad de que ambos formen pareja?</string>
-    <string name="V51">1/9</string>
-    <string name="V52">2/3</string>
-    <string name="V53">5/9</string>
+    <string name="PV5">En un examen calificado del 0 al 10, 3 personas obtuvieron 5 de nota, 5 personas obtuvieron 4 de nota, y 2 personas obtuvieron 3 de nota. Calcular la nota media:
 
-    <string name="PV6">Al lanzar dos dados ¿Cuál es la probabilidad de que el resultado de los dos dados no sea 7?</string>
-    <string name="V61">1/6</string>
-    <string name="V62">2/7</string>
-    <string name="V63">5/6</string>
+</string>
+    <string name="V51">4.45</string>
+    <string name="V52">4.1</string>
+    <string name="V53">5</string>
 
-    <string name="PV7">Determinar la probabilidad de que al extraer 2 cartas de una baraja, estas sean corazones.</string>
-    <string name="V71">1/13</string>
-    <string name="V72">1/17</string>
-    <string name="V73">4/27</string>
+    <string name="PV6">Calcular la moda de los siguientes datos: 11, 6, 7, 7, 4.</string>
+    <string name="V61">11</string>
+    <string name="V62">5</string>
+    <string name="V63">7</string>
 
-    <string name="PV8">Un artillero dispara a un blanco. Si la probabilidad de acertar un tiro es de 0.01 ¿Qué probabilidad tiene de no acertar?</string>
-    <string name="V81">"0.99"</string>
-    <string name="V82">"0.09"</string>
-    <string name="V83">"0.9"</string>
+    <string name="PV7">Encontrar la moda de los siguientes datos: 3, 3, 5, 5, 6, 6, 7, 7.</string>
+    <string name="V71">No hay</string>
+    <string name="V72">3,5,6,7</string>
+    <string name="V73">7</string>
 
-    <string name="PV9">En una caja hay 10 focos de los cuales 4 estan en buen estado, una persona toma la azar 3 focos. Hallar la probabilidad de que por lo menos uno este en buen estado</string>
-    <string name="V91">"1/5"</string>
-    <string name="V92">"1/6"</string>
-    <string name="V93">"5/6"</string>
+    <string name="PV8">El número de hermanos de un grupo de 5 niños es 1, 3, 0, 2 y 2. calcule la media</string>
+    <string name="V81">2</string>
+    <string name="V82">1.6</string>
+    <string name="V83">1.3</string>
 
-    <string name="PV10">Sabiendo que la probabilidad de que ocurra un accidente en un 1Km de una carretera es de 1/3 ¿Cuál es la probabilidad de que ocurra encontrar al menos un accidente en 3Km de esa carretera?</string>
-    <string name="V101">"1/27"</string>
-    <string name="V102">"19/27"</string>
-    <string name="V103">"2/3"</string>
+    <string name="PV9">Las alturas (en centímetros) de los 10 alumnos de una clase son 178, 163, 155, 159, 171, 155, 172, 170, 159 y 163. calcula la mediana</string>
+    <string name="V91">164</string>
+    <string name="V92">170</string>
+    <string name="V93">163</string>
+
+    <string name="PV10"> Los sueldos anuales de una muestra de cinco empleados son $39000, $37500, $35200, $40400 y $100000. Calcule las medidas de tendencia central. calcule la media</string>
+    <string name="V101">252100</string>
+    <string name="V102">50420</string>
+    <string name="V103">50421</string>
 
 
     <string name="tituloValoresEst">Valores Estadisticos</string>
