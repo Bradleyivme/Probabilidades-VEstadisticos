@@ -14,4 +14,7 @@
         android:drawable="@drawable/back3"
         android:duration="5000"
         />
+
+
+
 </animation-list>
