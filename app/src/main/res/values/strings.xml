@@ -79,9 +79,7 @@
     <string name="V42">6</string>
     <string name="V43">5</string>
 
-    <string name="PV5">En un examen calificado del 0 al 10, 3 personas obtuvieron 5 de nota, 5 personas obtuvieron 4 de nota, y 2 personas obtuvieron 3 de nota. Calcular la nota media:
-
-</string>
+    <string name="PV5">En un examen calificado del 0 al 10, 3 personas obtuvieron 5 de nota, 5 personas obtuvieron 4 de nota, y 2 personas obtuvieron 3 de nota. Calcular la nota media:</string>
     <string name="V51">4.45</string>
     <string name="V52">4.1</string>
     <string name="V53">5</string>

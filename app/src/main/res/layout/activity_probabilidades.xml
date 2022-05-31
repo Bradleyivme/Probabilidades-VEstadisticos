@@ -92,7 +92,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <RadioButton
-            android:id="@+id/rbtn1"
+            android:id="@+id/op1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="serif-monospace"
@@ -102,7 +102,7 @@
             android:textStyle="bold" />
 
         <RadioButton
-            android:id="@+id/rbtn2"
+            android:id="@+id/op2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="serif-monospace"
@@ -111,7 +111,7 @@
             android:textStyle="bold" />
 
         <RadioButton
-            android:id="@+id/rbtn3"
+            android:id="@+id/op3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="serif-monospace"

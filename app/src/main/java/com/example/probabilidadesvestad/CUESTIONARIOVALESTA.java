@@ -20,14 +20,14 @@ public class CUESTIONARIOVALESTA extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cuestionariovalesta);
-        rdOpc1 = (RadioButton)findViewById(R.id.rbtn1);
-        rdOpc2 = (RadioButton)findViewById(R.id.rbtn2);
-        rdOpc3 = (RadioButton)findViewById(R.id.rbtn3);
-        txtNpregunta = (TextView)findViewById(R.id.Indicep);
-        txtPregunta = (TextView)findViewById(R.id.pregunta);
-        resp = (TextView)findViewById(R.id.F);
-        next = (Button)findViewById(R.id.SIG);
-        salir = (Button)findViewById(R.id.terminar);
+        rdOpc1 = (RadioButton)findViewById(R.id.op1);
+        rdOpc2 = (RadioButton)findViewById(R.id.op2);
+        rdOpc3 = (RadioButton)findViewById(R.id.op3);
+        txtNpregunta = (TextView)findViewById(R.id.indice);
+        txtPregunta = (TextView)findViewById(R.id.pregunta1);
+        resp = (TextView)findViewById(R.id.sa);
+        next = (Button)findViewById(R.id.SIG2);
+        salir = (Button)findViewById(R.id.terminarf);
     }
     @SuppressLint("SetTextI18n")
     public void Siguiente(View v){

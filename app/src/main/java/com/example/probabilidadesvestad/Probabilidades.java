@@ -23,9 +23,9 @@ public class Probabilidades extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_probabilidades);
-        rdOpc1 = (RadioButton)findViewById(R.id.rbtn1);
-        rdOpc2 = (RadioButton)findViewById(R.id.rbtn2);
-        rdOpc3 = (RadioButton)findViewById(R.id.rbtn3);
+        rdOpc1 = (RadioButton)findViewById(R.id.op1);
+        rdOpc2 = (RadioButton)findViewById(R.id.op2);
+        rdOpc3 = (RadioButton)findViewById(R.id.op3);
         txtNpregunta = (TextView)findViewById(R.id.Indicep);
         txtPregunta = (TextView)findViewById(R.id.pregunta);
         resp = (TextView)findViewById(R.id.F);
