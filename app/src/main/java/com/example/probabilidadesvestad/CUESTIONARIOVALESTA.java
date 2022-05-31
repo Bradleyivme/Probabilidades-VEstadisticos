@@ -1,8 +1,10 @@
 package com.example.probabilidadesvestad;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.annotation.SuppressLint;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -28,6 +30,9 @@ public class CUESTIONARIOVALESTA extends AppCompatActivity {
         resp = (TextView)findViewById(R.id.sa);
         next = (Button)findViewById(R.id.SIG2);
         salir = (Button)findViewById(R.id.terminarf);
+
+
+
     }
     @SuppressLint("SetTextI18n")
     public void Siguiente(View v){
