@@ -12,7 +12,7 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Probabilidades extends AppCompatActivity {
+public class CUESTIONARIOVALESTA extends AppCompatActivity {
     Button salir, next;
     RadioButton rdOpc1, rdOpc2, rdOpc3;
     TextView txtNpregunta, txtPregunta, resp;
@@ -21,25 +21,16 @@ public class Probabilidades extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        setContentView(R.layout.activity_probabilidades);
+        setContentView(R.layout.activity_cuestionariovalesta);
         rdOpc1 = (RadioButton)findViewById(R.id.op1);
         rdOpc2 = (RadioButton)findViewById(R.id.op2);
         rdOpc3 = (RadioButton)findViewById(R.id.op3);
-        txtNpregunta = (TextView)findViewById(R.id.Indicep);
-        txtPregunta = (TextView)findViewById(R.id.pregunta);
-        resp = (TextView)findViewById(R.id.F);
-        next = (Button)findViewById(R.id.SIG);
-        salir = (Button)findViewById(R.id.terminar);
+        txtNpregunta = (TextView)findViewById(R.id.indice);
+        txtPregunta = (TextView)findViewById(R.id.pregunta1);
+        resp = (TextView)findViewById(R.id.sa);
+        next = (Button)findViewById(R.id.SIG2);
+        salir = (Button)findViewById(R.id.terminarf);
 
-
-
-        ConstraintLayout constraintLayout = findViewById(R.id.mainLayout);
-
-        AnimationDrawable animationDrawable = (AnimationDrawable) constraintLayout.getBackground();
-        animationDrawable.setEnterFadeDuration(2500);
-        animationDrawable.setEnterFadeDuration(5000);
-        animationDrawable.start();
 
 
     }
@@ -55,7 +46,7 @@ public class Probabilidades extends AppCompatActivity {
         else if(Npregunta == 1){
 
 
-            if(rdOpc2.isChecked()){
+            if(rdOpc1.isChecked()){
                 nota = nota + 1;
                 Toast.makeText(this,  R.string.correct, Toast.LENGTH_SHORT).show();
             }else{
@@ -65,17 +56,17 @@ public class Probabilidades extends AppCompatActivity {
             Npregunta = Npregunta + 1;
 
             txtNpregunta.setText("2 de 10");
-            txtPregunta.setText(R.string.Pregunta2);
-            rdOpc1.setText(R.string.R21);
-            rdOpc2.setText(R.string.R22);
-            rdOpc3.setText(R.string.R23);
+            txtPregunta.setText(R.string.PV2);
+            rdOpc1.setText(R.string.V21);
+            rdOpc2.setText(R.string.V22);
+            rdOpc3.setText(R.string.V23);
             //Se limpian los Radio buttons para la siguiente pregunta
             rdOpc1.setChecked(false);
             rdOpc2.setChecked(false);
             rdOpc3.setChecked(false);
         }else if(Npregunta == 2) {
             //Se verifica la respuesta, si es correcta se agregan 1 puntos a la nota
-            if (rdOpc1.isChecked()) {
+            if (rdOpc2.isChecked()) {
                 nota = nota + 1;
                 Toast.makeText(this,  R.string.correct, Toast.LENGTH_SHORT).show();
             }else{
@@ -85,17 +76,17 @@ public class Probabilidades extends AppCompatActivity {
             Npregunta = Npregunta + 1;
             //Se setean los textos para la siguiente pregunta
             txtNpregunta.setText("3 de 10");
-            txtPregunta.setText(R.string.Pregunta3);
-            rdOpc1.setText(R.string.R31);
-            rdOpc2.setText(R.string.R32);
-            rdOpc3.setText(R.string.R33);
+            txtPregunta.setText(R.string.PV3);
+            rdOpc1.setText(R.string.V31);
+            rdOpc2.setText(R.string.V32);
+            rdOpc3.setText(R.string.V33);
             //Se limpian los Radio buttons para la siguiente pregunta
             rdOpc1.setChecked(false);
             rdOpc2.setChecked(false);
             rdOpc3.setChecked(false);
         }else if(Npregunta == 3) {
 
-            if (rdOpc3.isChecked()) {
+            if (rdOpc1.isChecked()) {
                 nota = nota + 1;
                 Toast.makeText(this,  R.string.correct, Toast.LENGTH_SHORT).show();
             }else{
@@ -105,17 +96,17 @@ public class Probabilidades extends AppCompatActivity {
             Npregunta = Npregunta + 1;
             //Se setean los textos para la siguiente pregunta
             txtNpregunta.setText("4 de 10");
-            txtPregunta.setText(R.string.Pregunta4);
-            rdOpc1.setText(R.string.R41);
-            rdOpc2.setText(R.string.R42);
-            rdOpc3.setText(R.string.R43);
+            txtPregunta.setText(R.string.PV4);
+            rdOpc1.setText(R.string.V41);
+            rdOpc2.setText(R.string.V42);
+            rdOpc3.setText(R.string.V43);
             //Se limpian los Radio buttons para la siguiente pregunta
             rdOpc1.setChecked(false);
             rdOpc2.setChecked(false);
             rdOpc3.setChecked(false);
         }else if(Npregunta == 4) {
 
-            if (rdOpc1.isChecked()) {
+            if (rdOpc3.isChecked()) {
                 nota = nota + 1;
                 Toast.makeText(this,  R.string.correct, Toast.LENGTH_SHORT).show();
             }else{
@@ -125,17 +116,17 @@ public class Probabilidades extends AppCompatActivity {
             Npregunta = Npregunta + 1;
 
             txtNpregunta.setText("5 de 10");
-            txtPregunta.setText(R.string.Pregunta5);
-            rdOpc1.setText(R.string.R51);
-            rdOpc2.setText(R.string.R52);
-            rdOpc3.setText(R.string.R53);
+            txtPregunta.setText(R.string.PV5);
+            rdOpc1.setText(R.string.V51);
+            rdOpc2.setText(R.string.V52);
+            rdOpc3.setText(R.string.V53);
             //Se limpian los Radio buttons para la siguiente pregunta
             rdOpc1.setChecked(false);
             rdOpc2.setChecked(false);
             rdOpc3.setChecked(false);
         }else if(Npregunta == 5) {
             //Se verifica la respuesta, si es correcta se agregan 2 puntos a la nota
-            if (rdOpc1.isChecked()) {
+            if (rdOpc2.isChecked()) {
                 nota = nota + 1;
                 Toast.makeText(this,  R.string.correct, Toast.LENGTH_SHORT).show();
             }else{
@@ -145,10 +136,10 @@ public class Probabilidades extends AppCompatActivity {
             Npregunta = Npregunta + 1;
             //Se setean los textos para la siguiente pregunta
             txtNpregunta.setText("6 de 10");
-            txtPregunta.setText(R.string.Pregunta6);
-            rdOpc1.setText(R.string.R61);
-            rdOpc2.setText(R.string.R62);
-            rdOpc3.setText(R.string.R63);
+            txtPregunta.setText(R.string.PV6);
+            rdOpc1.setText(R.string.V61);
+            rdOpc2.setText(R.string.V62);
+            rdOpc3.setText(R.string.V63);
             //Se limpian los Radio buttons para la siguiente pregunta
             rdOpc1.setChecked(false);
             rdOpc2.setChecked(false);
@@ -165,35 +156,15 @@ public class Probabilidades extends AppCompatActivity {
             Npregunta = Npregunta + 1;
             //Se setean los textos para la siguiente pregunta
             txtNpregunta.setText("7 de 10");
-            txtPregunta.setText(R.string.Pregunta7);
-            rdOpc1.setText(R.string.R71);
-            rdOpc2.setText(R.string.R72);
-            rdOpc3.setText(R.string.R73);
+            txtPregunta.setText(R.string.PV7);
+            rdOpc1.setText(R.string.V71);
+            rdOpc2.setText(R.string.V72);
+            rdOpc3.setText(R.string.V73);
             //Se limpian los Radio buttons para la siguiente pregunta
             rdOpc1.setChecked(false);
             rdOpc2.setChecked(false);
             rdOpc3.setChecked(false);
         } else if(Npregunta == 7) {
-            //Se verifica la respuesta, si es correcta se agregan 2 puntos a la nota
-            if (rdOpc2.isChecked()) {
-                nota = nota + 1;
-                Toast.makeText(this,  R.string.correct, Toast.LENGTH_SHORT).show();
-            }else{
-                Toast.makeText(this, R.string.incorrect, Toast.LENGTH_SHORT).show();
-            }
-            //Se le suma 1 al contador de la pregunta
-            Npregunta = Npregunta + 1;
-            //Se setean los textos para la siguiente pregunta
-            txtNpregunta.setText("8 de 10");
-            txtPregunta.setText(R.string.Pregunta8);
-            rdOpc1.setText(R.string.R81);
-            rdOpc2.setText(R.string.R82);
-            rdOpc3.setText(R.string.R83);
-            //Se limpian los Radio buttons para la siguiente pregunta
-            rdOpc1.setChecked(false);
-            rdOpc2.setChecked(false);
-            rdOpc3.setChecked(false);
-        }else if(Npregunta == 8) {
             //Se verifica la respuesta, si es correcta se agregan 2 puntos a la nota
             if (rdOpc1.isChecked()) {
                 nota = nota + 1;
@@ -204,11 +175,31 @@ public class Probabilidades extends AppCompatActivity {
             //Se le suma 1 al contador de la pregunta
             Npregunta = Npregunta + 1;
             //Se setean los textos para la siguiente pregunta
+            txtNpregunta.setText("8 de 10");
+            txtPregunta.setText(R.string.PV8);
+            rdOpc1.setText(R.string.V81);
+            rdOpc2.setText(R.string.V82);
+            rdOpc3.setText(R.string.V83);
+            //Se limpian los Radio buttons para la siguiente pregunta
+            rdOpc1.setChecked(false);
+            rdOpc2.setChecked(false);
+            rdOpc3.setChecked(false);
+        }else if(Npregunta == 8) {
+            //Se verifica la respuesta, si es correcta se agregan 2 puntos a la nota
+            if (rdOpc2.isChecked()) {
+                nota = nota + 1;
+                Toast.makeText(this,  R.string.correct, Toast.LENGTH_SHORT).show();
+            }else{
+                Toast.makeText(this, R.string.incorrect, Toast.LENGTH_SHORT).show();
+            }
+            //Se le suma 1 al contador de la pregunta
+            Npregunta = Npregunta + 1;
+            //Se setean los textos para la siguiente pregunta
             txtNpregunta.setText("9 de 10");
-            txtPregunta.setText(R.string.Pregunta9);
-            rdOpc1.setText(R.string.R91);
-            rdOpc2.setText(R.string.R92);
-            rdOpc3.setText(R.string.R93);
+            txtPregunta.setText(R.string.PV9);
+            rdOpc1.setText(R.string.V91);
+            rdOpc2.setText(R.string.V92);
+            rdOpc3.setText(R.string.V93);
             //Se limpian los Radio buttons para la siguiente pregunta
             rdOpc1.setChecked(false);
             rdOpc2.setChecked(false);
@@ -225,10 +216,10 @@ public class Probabilidades extends AppCompatActivity {
             Npregunta = Npregunta + 1;
             //Se setean los textos para la siguiente pregunta
             txtNpregunta.setText("10 de 10");
-            txtPregunta.setText(R.string.Pregunta10);
-            rdOpc1.setText(R.string.R101);
-            rdOpc2.setText(R.string.R102);
-            rdOpc3.setText(R.string.R103);
+            txtPregunta.setText(R.string.PV10);
+            rdOpc1.setText(R.string.V101);
+            rdOpc2.setText(R.string.V102);
+            rdOpc3.setText(R.string.V103);
             //Se limpian los Radio buttons para la siguiente pregunta
             rdOpc1.setChecked(false);
             rdOpc2.setChecked(false);
@@ -263,4 +254,5 @@ public class Probabilidades extends AppCompatActivity {
         finish();
 
     }
+
 }

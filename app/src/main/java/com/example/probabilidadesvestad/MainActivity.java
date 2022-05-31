@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(x);
     }
     public void cuestioanariovalestadisticos(View view){
-        Intent x = new Intent(this,cuestionariovalestadisticos.class);
+        Intent x = new Intent(this,CUESTIONARIOVALESTA.class);
         startActivity(x);
     }
     public void contenidos(View view){

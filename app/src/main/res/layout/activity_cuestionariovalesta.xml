@@ -4,16 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Probabilidades"
-    android:background="@drawable/animation"
-    android:id="@+id/mainLayout">
+    tools:context=".CUESTIONARIOVALESTA">
+
+    <Button
+        android:id="@+id/SIG2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/button"
+        android:backgroundTint="@color/black"
+        android:onClick="Siguiente"
+        android:text="@string/sig"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/terminarf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:onClick="salir"
+        android:text="@string/regresar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.935" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tex"
         android:layout_width="202dp"
         android:layout_height="35dp"
         android:fontFamily="cursive"
-        android:text="Probabilidades"
+        android:text="Valores estadisticos"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -22,10 +48,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.054"
-        tools:text="Probabilidades" />
+        tools:text="Valores estadisticos" />
 
     <TextView
-        android:id="@+id/Indicep"
+        android:id="@+id/indice"
         android:layout_width="233dp"
         android:layout_height="57dp"
         android:layout_marginTop="80dp"
@@ -39,48 +65,33 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/pregunta"
+        android:id="@+id/sa"
+        android:layout_width="297dp"
+        android:layout_height="131dp"
+        android:layout_marginBottom="336dp"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/pregunta1"
         android:layout_width="355dp"
         android:layout_height="268dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="136dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="112dp"
         android:backgroundTint="@color/black"
         android:fontFamily="casual"
-        android:text="@string/pregunta1"
+        android:text="@string/PV1"
         android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/terminar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="salir"
-        android:text="@string/regresar"
-        android:background="@drawable/button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.123"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.935"
-      />
-
-    <Button
-        android:id="@+id/SIG"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="36dp"
-        android:layout_marginBottom="44dp"
-        android:background="@drawable/button"
-        android:backgroundTint="@color/black"
-        android:onClick="Siguiente"
-        android:text="@string/sig"
-        app:iconTint="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 
     <RadioGroup
         android:id="@+id/groupbut"
@@ -96,7 +107,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="serif-monospace"
-            android:text="@string/R11"
+            android:text="@string/V11"
             android:textAlignment="textStart"
             android:textSize="34sp"
             android:textStyle="bold" />
@@ -106,7 +117,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="serif-monospace"
-            android:text="@string/R12"
+            android:text="@string/v12"
             android:textSize="34sp"
             android:textStyle="bold" />
 
@@ -119,19 +130,4 @@
             android:textSize="34sp"
             android:textStyle="bold" />
     </RadioGroup>
-
-    <TextView
-        android:id="@+id/F"
-        android:layout_width="297dp"
-        android:layout_height="131dp"
-        android:layout_marginBottom="336dp"
-        android:fontFamily="serif-monospace"
-        android:textAlignment="center"
-        android:textSize="48sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

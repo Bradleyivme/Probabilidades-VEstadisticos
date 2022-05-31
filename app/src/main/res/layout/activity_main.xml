@@ -85,6 +85,7 @@
         android:layout_height="60dp"
         android:background="@drawable/button"
         android:fontFamily="sans-serif-smallcaps"
+        android:onClick="Iravaloresestadisticos"
         android:text="Calculadora "
         android:textColor="@color/white"
         android:textSize="14sp"
